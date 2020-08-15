@@ -147,7 +147,16 @@ function ProductsScreen(props) {
                 <input type="file" onChange={uploadFileHandler}></input>
                 {uploading && <div>Uploading...</div>}
               </li>
-
+              <li>
+                <label htmlFor="brand">Branch</label>
+                <input
+                  type="text"
+                  name="brand"
+                  value={brand}
+                  id="brand"
+                  onChange={(e) => setBrand(e.target.value)}
+                ></input>
+              </li>
               <li>
                 <label htmlFor="countInStock">CountInStock</label>
                 <input
