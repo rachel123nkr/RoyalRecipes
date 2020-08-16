@@ -8,6 +8,10 @@ import {
 } from '../actions/productActions';
 
 function ProductsScreen(props) {
+
+  const userSignin = useSelector((state) => state.userSignin);
+  const { userInfo } = userSignin;
+
   const [modalVisible, setModalVisible] = useState(false);
   const [id, setId] = useState('');
   const [name, setName] = useState('');

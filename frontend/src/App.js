@@ -28,8 +28,10 @@ function App() {
   };
   return (
     <BrowserRouter>
+
+
       <div className="grid-container">
-        <header className="header">
+         <header className="header">
           <div className="brand">
             <button onClick={openMenu}>&#9776;</button>
             <Link to="/">Royal Recipes</Link>
