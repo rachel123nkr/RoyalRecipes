@@ -19,9 +19,7 @@ router.get('/', async (req, res) => {
       ? { price: 1 }
       : { price: -1 }
     : { _id: -1 };
-  const products = await Product.find({ ...category, ...searchKeyword }).sort(
-    sortOrder
-  );
+  const products = await Product.find({ ...category, ...searchKeyword }).sort(sortOrder);
   res.send(products);
 });
 
